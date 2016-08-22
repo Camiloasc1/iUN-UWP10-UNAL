@@ -22,10 +22,10 @@
         <Grid.Background>
             <ImageBrush Stretch="UniformToFill" ImageSource="Assets/Background.png"/>
         </Grid.Background>
-        <Button x:Name="ButtonServices" Content="Servicios" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Top" Click="OnButtonServicesClick" Grid.Row="1"/>
-        <Button x:Name="ButtonLocations" Content="Sedes" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1" VerticalAlignment="Top" Click="OnButtonLocationsClick"/>
-        <Button x:Name="ButtonAdmissions" Content="Admisiones" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" VerticalAlignment="Top" Click="OnButtonAdmissionsClick"/>
-        <Button x:Name="ButtonEvents" Content="Eventos" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" VerticalAlignment="Top" Click="OnButtonEventsClick"/>
+        <Button x:Name="ButtonServices" Content="Servicios" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Top" Click="OnButtonServicesClick" Grid.Row="1" BorderBrush="White" Background="#00000000"/>
+        <Button x:Name="ButtonLocations" Content="Sedes" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1" VerticalAlignment="Top" Click="OnButtonLocationsClick" BorderBrush="White" Background="#00000000"/>
+        <Button x:Name="ButtonAdmissions" Content="Admisiones" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" VerticalAlignment="Top" Click="OnButtonAdmissionsClick" BorderBrush="White" Background="#00000000"/>
+        <Button x:Name="ButtonEvents" Content="Eventos" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" VerticalAlignment="Top" Click="OnButtonEventsClick" BorderBrush="White" Background="#00000000"/>
         <TextBlock x:Name="TextBlockLicense" HorizontalAlignment="Center" Margin="0" Grid.Row="3" TextWrapping="Wrap" Text="Licencia" VerticalAlignment="Top"/>
         <TextBlock x:Name="TextBlockFeedback" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="3" TextWrapping="Wrap" Text="Danos tu opinión" VerticalAlignment="Top"/>
     </Grid>
