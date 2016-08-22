@@ -26,5 +26,25 @@ namespace iUN_UWP10_UNAL
         {
             this.InitializeComponent();
         }
+
+        private void OnButtonServicesClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnButtonLocationsClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnButtonAdmissionsClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnButtonEventsClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
