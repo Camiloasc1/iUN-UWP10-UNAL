@@ -9,11 +9,12 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="10*" MinHeight="64"/>
+            <RowDefinition Height="5*" MinHeight="32"/>
+            <RowDefinition Height="5*" MinHeight="32"/>
+            <RowDefinition Height="5*" MinHeight="32"/>
+            <RowDefinition Height="5*" MinHeight="32"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -22,12 +23,13 @@
         <Grid.Background>
             <ImageBrush Stretch="UniformToFill" ImageSource="Assets/Background.png"/>
         </Grid.Background>
-        <Button x:Name="ButtonServices" Content="Servicios" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Top" Click="OnButtonServicesClick" Grid.Row="1" BorderBrush="White" Background="#00000000"/>
-        <Button x:Name="ButtonLocations" Content="Sedes" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1" VerticalAlignment="Top" Click="OnButtonLocationsClick" BorderBrush="White" Background="#00000000"/>
-        <Button x:Name="ButtonAdmissions" Content="Admisiones" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" VerticalAlignment="Top" Click="OnButtonAdmissionsClick" BorderBrush="White" Background="#00000000"/>
-        <Button x:Name="ButtonEvents" Content="Eventos" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" VerticalAlignment="Top" Click="OnButtonEventsClick" BorderBrush="White" Background="#00000000"/>
-        <TextBlock x:Name="TextBlockLicense" HorizontalAlignment="Center" Margin="0" Grid.Row="3" TextWrapping="Wrap" Text="Licencia" VerticalAlignment="Top"/>
-        <TextBlock x:Name="TextBlockFeedback" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="3" TextWrapping="Wrap" Text="Danos tu opinión" VerticalAlignment="Top"/>
+        <Button x:Name="ButtonServices" Content="Servicios" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Top" Click="OnButtonServicesClick" Grid.Row="2" BorderBrush="White" Background="#00000000"/>
+        <Button x:Name="ButtonLocations" Content="Sedes" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" VerticalAlignment="Top" Click="OnButtonLocationsClick" BorderBrush="White" Background="#00000000"/>
+        <Button x:Name="ButtonAdmissions" Content="Admisiones" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3" VerticalAlignment="Top" Click="OnButtonAdmissionsClick" BorderBrush="White" Background="#00000000"/>
+        <Button x:Name="ButtonEvents" Content="Eventos" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3" VerticalAlignment="Top" Click="OnButtonEventsClick" BorderBrush="White" Background="#00000000"/>
+        <TextBlock x:Name="TextBlockLicense" Margin="0" Grid.Row="4" TextWrapping="Wrap" Text="Licencia" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TextBlockFeedback" Grid.Column="1" Margin="0" Grid.Row="4" TextWrapping="Wrap" Text="Danos tu opinión" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Image x:Name="image" Margin="0" Source="Assets/Person.png" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Top"/>
     </Grid>
 </Page>
 
