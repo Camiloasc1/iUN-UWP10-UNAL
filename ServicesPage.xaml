@@ -9,19 +9,47 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="20*"/>
-            <RowDefinition Height="70*"/>
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="70*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="80*"/>
-            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="80*" />
+            <ColumnDefinition Width="10*" />
         </Grid.ColumnDefinitions>
         <Grid.Background>
-            <ImageBrush Stretch="UniformToFill" ImageSource="Assets/Background.png"/>
+            <ImageBrush Stretch="UniformToFill" ImageSource="Assets/Background.png" />
         </Grid.Background>
+        <ScrollViewer Grid.Column="1" Margin="0" Grid.Row="2" HorizontalContentAlignment="Left">
+            <Grid x:Name="ServicesList" Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="textBlock0" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap"
+                           Text="Interes General" VerticalAlignment="Center" Grid.ColumnSpan="3" Foreground="White" />
+                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="0" Grid.Row="4" TextWrapping="Wrap"
+                           Text="Comunidad UN" VerticalAlignment="Center" Foreground="White" Grid.ColumnSpan="3" />
+                <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="0" Grid.Row="9" TextWrapping="Wrap"
+                           Text="Servicios a la Comunidad" VerticalAlignment="Center" Foreground="White" Grid.ColumnSpan="3" />
 
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </Page>
-
