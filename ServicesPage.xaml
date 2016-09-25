@@ -47,7 +47,15 @@
                 <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="0" Grid.Row="4" TextWrapping="Wrap"
                            Text="Comunidad UN" VerticalAlignment="Center" Foreground="White" Grid.ColumnSpan="3" />
                 <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="0" Grid.Row="9" TextWrapping="Wrap"
-                           Text="Servicios a la Comunidad" VerticalAlignment="Center" Foreground="White" Grid.ColumnSpan="3" />
+                           Text="Servicios a la Comunidad" VerticalAlignment="Center" Foreground="White"
+                           Grid.ColumnSpan="3" />
+                <Button x:Name="ButtonMainPage" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1"
+                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick" >
+                    <StackPanel Margin="0">
+                        <Image x:Name="ImageMainPage" Margin="0" Source="Assets/Services/UN.png"/>
+                        <TextBlock x:Name="TextBlockMainPage" Margin="0" TextWrapping="WrapWholeWords" Text="Pagina Principal" TextAlignment="Center"/>
+                    </StackPanel>
+                </Button>
 
             </Grid>
         </ScrollViewer>

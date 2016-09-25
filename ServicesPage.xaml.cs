@@ -26,5 +26,10 @@ namespace iUN_UWP10_UNAL
         {
             this.InitializeComponent();
         }
+
+        private void OnButtonMainPageClick(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(WebViewPage), "unal.edu.co");
+        }
     }
 }
