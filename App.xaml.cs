@@ -135,12 +135,12 @@ namespace iUN_UWP10_UNAL
         /// <param name="e">Event</param>
         private void OnBackRequested(object sender, BackRequestedEventArgs e)
         {
-            Frame rootFrame = Window.Current.Content as Frame;
-
-            if (rootFrame.CanGoBack)
+            Frame currentFrame = Window.Current.Content as Frame;
+            
+            if (currentFrame.CanGoBack)
             {
                 e.Handled = true;
-                rootFrame.GoBack();
+                currentFrame.GoBack();
             }
         }
     }
