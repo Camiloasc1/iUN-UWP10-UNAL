@@ -102,6 +102,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebViewPage.xaml.cs">
+      <DependentUpon>WebViewPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -112,6 +115,32 @@
   <ItemGroup>
     <Content Include="Assets\Background.png" />
     <Content Include="Assets\Person.png" />
+    <Content Include="Assets\Services\Admisiones.png" />
+    <Content Include="Assets\Services\Comedores.png" />
+    <Content Include="Assets\Services\ComitePrevencion.png" />
+    <Content Include="Assets\Services\Cooperativa.png" />
+    <Content Include="Assets\Services\Correo.png" />
+    <Content Include="Assets\Services\DRE.png" />
+    <Content Include="Assets\Services\Fodun.png" />
+    <Content Include="Assets\Services\Hermes.png" />
+    <Content Include="Assets\Services\IPARM.png" />
+    <Content Include="Assets\Services\Laboratorios.png" />
+    <Content Include="Assets\Services\Leon.png" />
+    <Content Include="Assets\Services\Libreria.png" />
+    <Content Include="Assets\Services\Museos.png" />
+    <Content Include="Assets\Services\Periodico.png" />
+    <Content Include="Assets\Services\Prisma.png" />
+    <Content Include="Assets\Services\Radio.png" />
+    <Content Include="Assets\Services\ServicioMedico.png" />
+    <Content Include="Assets\Services\SIA.png" />
+    <Content Include="Assets\Services\SINAB.png" />
+    <Content Include="Assets\Services\TalentoHumano.png" />
+    <Content Include="Assets\Services\UN.png" />
+    <Content Include="Assets\Services\Unisalud.png" />
+    <Content Include="Assets\Services\WebDocente.png" />
+    <Content Include="Assets\WebView\Arrow.png" />
+    <Content Include="Assets\WebView\Bar.png" />
+    <Content Include="Assets\WebView\Refresh.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -133,6 +162,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WebViewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
