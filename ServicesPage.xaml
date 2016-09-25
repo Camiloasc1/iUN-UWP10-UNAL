@@ -42,21 +42,87 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
+
                 <TextBlock x:Name="textBlock0" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap"
                            Text="Interes General" VerticalAlignment="Center" Grid.ColumnSpan="3" Foreground="White" />
+                <Button x:Name="ButtonMainPage" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1"
+                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/UN.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Pagina Principal"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonLDG" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1"
+                        VerticalAlignment="Stretch" Click="OnButtonLDGClick" Grid.Column="1">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/Leon.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Leon de Greiff"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonLibreria" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1"
+                        VerticalAlignment="Stretch" Click="OnButtonLibreriaClick" Grid.Column="2">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/Libreria.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Libreria"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonRadio" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2"
+                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick" Grid.Column="0">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/Radio.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="UN Radio"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonPeriodico" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2"
+                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick" Grid.Column="1">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/Periodico.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="UN Periodico"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonPrisma" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2"
+                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick" Grid.Column="2">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/Prisma.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Prisma TV"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonMuseos" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3"
+                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick" Grid.Column="0">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/Museos.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Sistema de Patrimonio"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonAdmisiones" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3"
+                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick" Grid.Column="1">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/Admisiones.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Admisiones"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonAdmisiones2" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3"
+                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick" Grid.Column="2">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/Admisiones.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Admisiones"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+
                 <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="0" Grid.Row="4" TextWrapping="Wrap"
                            Text="Comunidad UN" VerticalAlignment="Center" Foreground="White" Grid.ColumnSpan="3" />
                 <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="0" Grid.Row="9" TextWrapping="Wrap"
                            Text="Servicios a la Comunidad" VerticalAlignment="Center" Foreground="White"
                            Grid.ColumnSpan="3" />
-                <Button x:Name="ButtonMainPage" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1"
-                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick" >
-                    <StackPanel Margin="0">
-                        <Image x:Name="ImageMainPage" Margin="0" Source="Assets/Services/UN.png"/>
-                        <TextBlock x:Name="TextBlockMainPage" Margin="0" TextWrapping="WrapWholeWords" Text="Pagina Principal" TextAlignment="Center"/>
-                    </StackPanel>
-                </Button>
-
             </Grid>
         </ScrollViewer>
     </Grid>

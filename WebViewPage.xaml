@@ -34,7 +34,7 @@
                 </Image.RenderTransform>
             </Image>
         </Button>
-        <TextBox x:Name="TextBoxURI" Grid.Column="3" Margin="0" Text="TextBox" IsReadOnly="True" VerticalAlignment="Center" TextAlignment="Left"/>
+        <TextBox x:Name="TextBoxURI" Grid.Column="3" Margin="0" IsReadOnly="True" VerticalAlignment="Center" TextAlignment="Left"/>
         <WebView x:Name="WebViewFrame" Margin="0" Grid.ColumnSpan="4" Grid.Row="1" />
     </Grid>
 </Page>

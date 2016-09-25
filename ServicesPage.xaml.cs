@@ -27,9 +27,24 @@ namespace iUN_UWP10_UNAL
             this.InitializeComponent();
         }
 
+        private void WebViewNavigate(string URI)
+        {
+            Frame.Navigate(typeof(WebViewPage), URI);
+        }
+
         private void OnButtonMainPageClick(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(WebViewPage), "unal.edu.co");
+            WebViewNavigate("unal.edu.co");
+        }
+
+        private void OnButtonLDGClick(object sender, RoutedEventArgs e)
+        {
+            WebViewNavigate("divulgacion.unal.edu.co");
+        }
+
+        private void OnButtonLibreriaClick(object sender, RoutedEventArgs e)
+        {
+            WebViewNavigate("uneditorial.com");
         }
     }
 }
