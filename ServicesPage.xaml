@@ -43,8 +43,9 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <TextBlock x:Name="textBlock0" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap"
+                <TextBlock x:Name="TextBlockGeneral" HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap"
                            Text="Interes General" VerticalAlignment="Center" Grid.ColumnSpan="3" Foreground="White" />
+                
                 <Button x:Name="ButtonMainPage" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1"
                         VerticalAlignment="Stretch" Click="OnButtonMainPageClick">
                     <StackPanel Margin="0">
@@ -70,7 +71,7 @@
                     </StackPanel>
                 </Button>
                 <Button x:Name="ButtonRadio" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2"
-                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick" Grid.Column="0">
+                        VerticalAlignment="Stretch" Click="OnButtonRadioClick" Grid.Column="0">
                     <StackPanel Margin="0">
                         <Image Margin="0" Source="Assets/Services/Radio.png" />
                         <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="UN Radio"
@@ -78,7 +79,7 @@
                     </StackPanel>
                 </Button>
                 <Button x:Name="ButtonPeriodico" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2"
-                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick" Grid.Column="1">
+                        VerticalAlignment="Stretch" Click="OnButtonPeriodicoClick" Grid.Column="1">
                     <StackPanel Margin="0">
                         <Image Margin="0" Source="Assets/Services/Periodico.png" />
                         <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="UN Periodico"
@@ -86,7 +87,7 @@
                     </StackPanel>
                 </Button>
                 <Button x:Name="ButtonPrisma" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2"
-                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick" Grid.Column="2">
+                        VerticalAlignment="Stretch" Click="OnButtonPrismaClick" Grid.Column="2">
                     <StackPanel Margin="0">
                         <Image Margin="0" Source="Assets/Services/Prisma.png" />
                         <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Prisma TV"
@@ -94,7 +95,7 @@
                     </StackPanel>
                 </Button>
                 <Button x:Name="ButtonMuseos" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3"
-                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick" Grid.Column="0">
+                        VerticalAlignment="Stretch" Click="OnButtonMuseosClick" Grid.Column="0">
                     <StackPanel Margin="0">
                         <Image Margin="0" Source="Assets/Services/Museos.png" />
                         <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Sistema de Patrimonio"
@@ -102,27 +103,142 @@
                     </StackPanel>
                 </Button>
                 <Button x:Name="ButtonAdmisiones" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3"
-                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick" Grid.Column="1">
+                        VerticalAlignment="Stretch" Click="OnButtonAdmisionesClick" Grid.Column="1">
                     <StackPanel Margin="0">
                         <Image Margin="0" Source="Assets/Services/Admisiones.png" />
                         <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Admisiones"
                                    TextAlignment="Center" />
                     </StackPanel>
                 </Button>
-                <Button x:Name="ButtonAdmisiones2" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3"
-                        VerticalAlignment="Stretch" Click="OnButtonMainPageClick" Grid.Column="2">
+                <Button x:Name="ButtonLaboratorios" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3"
+                        VerticalAlignment="Stretch" Click="OnButtonLaboratoriosClick" Grid.Column="2">
                     <StackPanel Margin="0">
-                        <Image Margin="0" Source="Assets/Services/Admisiones.png" />
-                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Admisiones"
+                        <Image Margin="0" Source="Assets/Services/Laboratorios.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Direccion Nacional de Laboratorios"
                                    TextAlignment="Center" />
                     </StackPanel>
                 </Button>
 
-                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="0" Grid.Row="4" TextWrapping="Wrap"
+                <TextBlock x:Name="TextBlockCommunidad" HorizontalAlignment="Left" Margin="0" Grid.Row="4" TextWrapping="Wrap"
                            Text="Comunidad UN" VerticalAlignment="Center" Foreground="White" Grid.ColumnSpan="3" />
-                <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="0" Grid.Row="9" TextWrapping="Wrap"
+
+                <Button x:Name="ButtonCorreo" HorizontalAlignment="Stretch" Margin="0" Grid.Row="5"
+                        VerticalAlignment="Stretch" Click="OnButtonCorreoClick" Grid.Column="0">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/Correo.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Correo Institucional"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonComedores" HorizontalAlignment="Stretch" Margin="0" Grid.Row="5"
+                        VerticalAlignment="Stretch" Click="OnButtonComedoresClick" Grid.Column="1">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/Comedores.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Comedores"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonMedico" HorizontalAlignment="Stretch" Margin="0" Grid.Row="5"
+                        VerticalAlignment="Stretch" Click="OnButtonMedicoClick" Grid.Column="2">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/ServicioMedico.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Servicio Medico Estudiantil"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonUnisalud" HorizontalAlignment="Stretch" Margin="0" Grid.Row="6"
+                        VerticalAlignment="Stretch" Click="OnButtonUnisaludClick" Grid.Column="0">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/Unisalud.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Unisalud"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonComitePrevencion" HorizontalAlignment="Stretch" Margin="0" Grid.Row="6"
+                        VerticalAlignment="Stretch" Click="OnButtonComitePrevencionClick" Grid.Column="1">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/ComitePrevencion.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Comité de Prevención"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonIPARM" HorizontalAlignment="Stretch" Margin="0" Grid.Row="6"
+                        VerticalAlignment="Stretch" Click="OnButtonIPARMClick" Grid.Column="2">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/IPARM.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Colegio IPARM"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonFodun" HorizontalAlignment="Stretch" Margin="0" Grid.Row="7"
+                        VerticalAlignment="Stretch" Click="OnButtonFodunClick" Grid.Column="0">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/Fodun.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Fodun"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonCooperativa" HorizontalAlignment="Stretch" Margin="0" Grid.Row="7"
+                        VerticalAlignment="Stretch" Click="OnButtonCooperativaClick" Grid.Column="1">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/Cooperativa.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Cooperativa de Profesores"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+
+                <TextBlock x:Name="TextBlockServicios" HorizontalAlignment="Left" Margin="0" Grid.Row="8" TextWrapping="Wrap"
                            Text="Servicios a la Comunidad" VerticalAlignment="Center" Foreground="White"
                            Grid.ColumnSpan="3" />
+
+                <Button x:Name="ButtonSIA" HorizontalAlignment="Stretch" Margin="0" Grid.Row="9"
+                        VerticalAlignment="Stretch" Click="OnButtonSIAClick" Grid.Column="0">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/SIA.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Sistema de Informacion Academica"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonSinab" HorizontalAlignment="Stretch" Margin="0" Grid.Row="9"
+                        VerticalAlignment="Stretch" Click="OnButtonSinabClick" Grid.Column="1">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/SINAB.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Librerias UN"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonHERMES" HorizontalAlignment="Stretch" Margin="0" Grid.Row="9"
+                        VerticalAlignment="Stretch" Click="OnButtonHERMESClick" Grid.Column="2">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/Hermes.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="HERMES"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonDRE" HorizontalAlignment="Stretch" Margin="0" Grid.Row="10"
+                        VerticalAlignment="Stretch" Click="OnButtonDREClick" Grid.Column="0">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/DRE.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Dirección de Relaciones Exteriores"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonTalentoHumano" HorizontalAlignment="Stretch" Margin="0" Grid.Row="10"
+                        VerticalAlignment="Stretch" Click="OnButtonTalentoHumanoClick" Grid.Column="1">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/TalentoHumano.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Talento Humano"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ButtonWebDocente" HorizontalAlignment="Stretch" Margin="0" Grid.Row="10"
+                        VerticalAlignment="Stretch" Click="OnButtonWebDocenteClick" Grid.Column="2">
+                    <StackPanel Margin="0">
+                        <Image Margin="0" Source="Assets/Services/WebDocente.png" />
+                        <TextBlock Margin="0" TextWrapping="WrapWholeWords" Text="Web Docente"
+                                   TextAlignment="Center" />
+                    </StackPanel>
+                </Button>
             </Grid>
         </ScrollViewer>
     </Grid>
